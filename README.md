@@ -10,8 +10,8 @@ This VSCode extension adds several commands to the command palette:
 
 ### Todoist: Add Task
 
-Default Keybinding (Workspace Project) <kbd>alt+t c</kbd>.  
-Default Keybinding (Global Project) <kbd>alt+t C</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t c</kbd><br>
+Default Keybinding (Global Project) <kbd>alt+t C</kbd>
 
 ![Adding a task](capture.gif)
 
@@ -19,8 +19,8 @@ Pop open an input box to capture a task for the project. Add labels using `@myla
 
 ### Todoist: List Tasks
 
-Default Keybinding (Workspace Project) <kbd>alt+t t</kbd>.  
-Default Keybinding (Global Project) <kbd>alt+t T</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t t</kbd><br>
+Default Keybinding (Global Project) <kbd>alt+t T</kbd>
 
 ![Listing tasks](list.gif)
 
@@ -28,8 +28,8 @@ Shows all the incomplete tasks in the Todoist project. Type in the input box to 
 
 ### Todoist: Open
 
-Default Keybinding (Workspace Project) <kbd>alt+t o</kbd>.  
-Default Keybinding (Global Project) <kbd>alt+t O</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t o</kbd><br>
+Default Keybinding (Global Project) <kbd>alt+t O</kbd>
 
 If you have the Todoist desktop app installed, this will open or switch to the Todoist app and select your current project.
 
