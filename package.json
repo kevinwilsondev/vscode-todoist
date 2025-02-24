@@ -1,143 +1,143 @@
 {
-  "name": "todoist",
-  "displayName": "todoist",
-  "description": "Use Todoist for managing and syncing todos",
-  "version": "0.5.0",
-  "publisher": "waymondo",
-  "browser": "./out/browser.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/waymondo/vscode-todoist.git"
-  },
-  "engines": {
-    "vscode": "^1.66.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:extension.todoistCaptureProject",
-    "onCommand:extension.todoistOpenProject",
-    "onCommand:extension.todoistTodosProject",
-    "onCommand:extension.todoistCaptureGlobal",
-    "onCommand:extension.todoistOpenGlobal",
-    "onCommand:extension.todoistTodosGlobal",
-    "onCommand:extension.todoistCaptureId",
-    "onCommand:extension.todoistOpenId",
-    "onCommand:extension.todoistTodosId"
-  ],
-  "main": "./out/extension.js",
-  "icon": "todoist-icon.png",
-  "license": "MIT",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.todoistCaptureProject",
-        "title": "Todoist Capture [Project]"
-      },
-      {
-        "command": "extension.todoistOpenProject",
-        "title": "Todoist Open [Project]"
-      },
-      {
-        "command": "extension.todoistTodosProject",
-        "title": "Todoist Todos [Project]"
-      },
-      {
-        "command": "extension.todoistCaptureGlobal",
-        "title": "Todoist Capture [Global]"
-      },
-      {
-        "command": "extension.todoistOpenGlobal",
-        "title": "Todoist Open [Global]"
-      },
-      {
-        "command": "extension.todoistTodosGlobal",
-        "title": "Todoist Todos [Global]"
-      },
-      {
-        "command": "extension.todoistCaptureId",
-        "title": "Todoist Capture [Id]"
-      },
-      {
-        "command": "extension.todoistOpenId",
-        "title": "Todoist Open [Id]"
-      },
-      {
-        "command": "extension.todoistTodosId",
-        "title": "Todoist Todos [Id]"
-      },
-      {
-        "command": "extension.todoistModifyToken",
-        "title": "Todoist Modify Token"
-      }
+    "name": "todoist",
+    "displayName": "Todoist for Code",
+    "description": "Use Todoist for managing and syncing todos",
+    "version": "0.5.39",
+    "publisher": "KevinWilson",
+    "browser": "./out/browser.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kevinwilsondev/vscode-todoist.git"
+    },
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Other"
     ],
-    "keybindings": [
-      {
-        "command": "extension.todoistCaptureProject",
-        "key": "alt+t c"
-      },
-      {
-        "command": "extension.todoistOpenProject",
-        "key": "alt+t o"
-      },
-      {
-        "command": "extension.todoistTodosProject",
-        "key": "alt+t t"
-      },
-      {
-        "command": "extension.todoistCaptureGlobal",
-        "key": "alt+t C"
-      },
-      {
-        "command": "extension.todoistOpenGlobal",
-        "key": "alt+t O"
-      },
-      {
-        "command": "extension.todoistTodosGlobal",
-        "key": "alt+t T"
-      }
+    "activationEvents": [
+        "onCommand:extension.todoistCaptureProject",
+        "onCommand:extension.todoistOpenProject",
+        "onCommand:extension.todoistTodosProject",
+        "onCommand:extension.todoistCaptureGlobal",
+        "onCommand:extension.todoistOpenGlobal",
+        "onCommand:extension.todoistTodosGlobal",
+        "onCommand:extension.todoistCaptureId",
+        "onCommand:extension.todoistOpenId",
+        "onCommand:extension.todoistTodosId"
     ],
-    "configuration": [
-      {
-        "title": "Todoist",
-        "properties": {
-          "todoist.projectId": {
-            "type": [
-              "string",
-              "number"
-            ],
-            "default": null,
-            "description": "Your global or workspace-specific project ID",
-            "scope": "window"
-          }
-        }
-      }
-    ]
-  },
-  "scripts": {
-    "build:web": "esbuild src/extension.ts --bundle --outfile=out/browser.js --minify --external:vscode --format=cjs",
-    "open-in-browser": "yarn run build:web && vscode-test-web --extensionDevelopmentPath=. .",
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./ && yarn build:web",
-    "lint": "eslint src --ext ts",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/node": "16.18.11",
-    "@types/vscode": "1.66.0",
-    "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "@typescript-eslint/parser": "^5.52.0",
-    "@vscode/test-web": "*",
-    "esbuild": "^0.17.8",
-    "eslint": "^8.34.0",
-    "typescript": "^4.9.5",
-    "vscode-test": "^1.6.1"
-  },
-  "resolutions": {
-    "minimist": "^1.2.5"
-  },
-  "dependencies": {
-    "@doist/todoist-api-typescript": "3.0.2"
-  }
+    "main": "./out/extension.js",
+    "icon": "todoist-icon.png",
+    "license": "MIT",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.todoistCaptureProject",
+                "title": "Todoist: Add Task (Workspace Project)"
+            },
+            {
+                "command": "extension.todoistOpenProject",
+                "title": "Todoist: Open (Workspace Project)"
+            },
+            {
+                "command": "extension.todoistTodosProject",
+                "title": "Todoist: List Tasks (Workspace Project)"
+            },
+            {
+                "command": "extension.todoistCaptureGlobal",
+                "title": "Todoist: Add Task (Global Project)"
+            },
+            {
+                "command": "extension.todoistOpenGlobal",
+                "title": "Todoist: Open (Global Project)"
+            },
+            {
+                "command": "extension.todoistTodosGlobal",
+                "title": "Todoist: List Tasks (Global Project)"
+            },
+            {
+                "command": "extension.todoistCaptureId",
+                "title": "Todoist: Add Task (Enter Project ID)"
+            },
+            {
+                "command": "extension.todoistOpenId",
+                "title": "Todoist: Open (Enter Project ID)"
+            },
+            {
+                "command": "extension.todoistTodosId",
+                "title": "Todoist: List Tasks (Enter Project ID)"
+            },
+            {
+                "command": "extension.todoistModifyToken",
+                "title": "Todoist: Set API Token"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.todoistCaptureProject",
+                "key": "alt+t c"
+            },
+            {
+                "command": "extension.todoistOpenProject",
+                "key": "alt+t o"
+            },
+            {
+                "command": "extension.todoistTodosProject",
+                "key": "alt+t t"
+            },
+            {
+                "command": "extension.todoistCaptureGlobal",
+                "key": "alt+t C"
+            },
+            {
+                "command": "extension.todoistOpenGlobal",
+                "key": "alt+t O"
+            },
+            {
+                "command": "extension.todoistTodosGlobal",
+                "key": "alt+t T"
+            }
+        ],
+        "configuration": [
+            {
+                "title": "Todoist",
+                "properties": {
+                    "todoist.projectId": {
+                        "type": [
+                            "string",
+                            "number"
+                        ],
+                        "default": null,
+                        "description": "Your global or workspace-specific project ID",
+                        "scope": "window"
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "build:web": "esbuild src/extension.ts --bundle --outfile=out/browser.js --minify --external:vscode --format=cjs",
+        "open-in-browser": "yarn run build:web && vscode-test-web --extensionDevelopmentPath=. .",
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./ && yarn build:web",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "16.18.11",
+        "@types/vscode": "1.66.0",
+        "@typescript-eslint/eslint-plugin": "^5.52.0",
+        "@typescript-eslint/parser": "^5.52.0",
+        "@vscode/test-web": "*",
+        "esbuild": "^0.17.8",
+        "eslint": "^8.34.0",
+        "typescript": "^4.9.5",
+        "vscode-test": "^1.6.1"
+    },
+    "resolutions": {
+        "minimist": "^1.2.5"
+    },
+    "dependencies": {
+        "@doist/todoist-api-typescript": "3.0.2"
+    }
 }
