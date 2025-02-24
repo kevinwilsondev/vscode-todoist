@@ -60,7 +60,7 @@ Obviously this requires a [Todoist](https://todoist.com) account. To use "Todois
 To install this extension, you can get it from VSCode store or open the command palette and enter:
 
 ```sh
-ext install KevinWilson.todoist
+ext install kevinwilson.todoistforcode
 ```
 
 Finally, run any extension command from the command palette and you will be prompted to enter your Todoist API token,
