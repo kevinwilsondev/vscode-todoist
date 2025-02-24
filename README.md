@@ -64,7 +64,7 @@ ext install KevinWilson.todoist
 ```
 
 Finally, run any extension command from the command palette and you will be prompted to enter your Todoist API token,
-which can be found [here](https://todoist.com/prefs/integrations).
+which can be found [here](https://todoist.com/prefs/integrations) (under the 'Developer' tab).
 
 You may set `todoist.projectId` in your user and workspaces settings manually or with the commands above.
 
