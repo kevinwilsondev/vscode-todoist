@@ -10,16 +10,16 @@ This VSCode extension adds several commands to the command palette:
 
 ### Todoist: Add Task
 
-Default Keybinding (Workspace Project) <kbd>alt+t c</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t c</kbd>.  
 Default Keybinding (Global Project) <kbd>alt+t C</kbd>.
 
 ![Adding a task](capture.gif)
 
-Pop open an input box to capture a task for the project. Add labels using **@mylabel** (surround the label with double or single quotes to include a space in it: @"my label") and set a priority with **!!1** to **!!4**, just like in the Todoist app. If you have a text selection made when this is invoked, it will add a link to your current file and line number to the task description, for easy deep linking from the Todoist desktop app.
+Pop open an input box to capture a task for the project. Add labels using `@mylabel` (surround the label with double or single quotes to include a space in it: `@"my label"`) and set a priority with `!!1` to `!!4`, just like in the Todoist app. If you have a text selection made when this is invoked, it will add a link to your current file and line number to the task description, for easy deep linking from the Todoist desktop app.
 
 ### Todoist: List Tasks
 
-Default Keybinding (Workspace Project) <kbd>alt+t t</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t t</kbd>.  
 Default Keybinding (Global Project) <kbd>alt+t T</kbd>.
 
 ![Listing tasks](list.gif)
@@ -28,7 +28,7 @@ Shows all the incomplete tasks in the Todoist project. Type in the input box to 
 
 ### Todoist: Open
 
-Default Keybinding (Workspace Project) <kbd>alt+t o</kbd>.
+Default Keybinding (Workspace Project) <kbd>alt+t o</kbd>.  
 Default Keybinding (Global Project) <kbd>alt+t O</kbd>.
 
 If you have the Todoist desktop app installed, this will open or switch to the Todoist app and select your current project.
