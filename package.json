@@ -1,8 +1,8 @@
 {
-    "name": "todoist",
+    "name": "todoistforcode",
     "displayName": "Todoist for Code",
     "description": "Use Todoist for managing and syncing todos",
-    "version": "0.5.39",
+    "version": "0.5.40",
     "publisher": "KevinWilson",
     "browser": "./out/browser.js",
     "repository": {
