@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.5.3
+
+- Added support for labels and priorities.
+
 ## 0.5
 
 - Added option to update the API token in the SecretStorage settings.
